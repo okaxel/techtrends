@@ -1,0 +1,25 @@
+## Docker commands used to build the application
+# DOME: insert the docker build command
+docker build -t techtrends -f ./Dockerfile .
+
+## Docker commands used to run the application
+# DONE: insert the docker run command
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+# DONE: insert the docker logs command
+docker logs 6fc1276144d9
+
+## Logs from the container running the TechTrends application
+# DONE: paste logs from the Docker container
+* Serving Flask app "app" (lazy loading)
+* Environment: production
+  WARNING: This is a development server. Do not use it in a production deployment.
+  Use a production WSGI server instead.
+* Debug mode: off
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [19/Nov/2021 15:05:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [19/Nov/2021 15:05:57] "GET / HTTP/1.1" 200 -
+INFO:app:Fri Nov 19 15:05:59 2021:About Us page is retrieved.
+INFO:werkzeug:172.17.0.1 - - [19/Nov/2021 15:05:59] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [19/Nov/2021 15:06:01] "GET / HTTP/1.1" 200 -
